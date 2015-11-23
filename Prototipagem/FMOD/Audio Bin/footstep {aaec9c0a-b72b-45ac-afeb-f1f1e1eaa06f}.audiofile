@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.05.00">
+    <object class="AudioFile" id="{aaec9c0a-b72b-45ac-afeb-f1f1e1eaa06f}">
+        <property name="frequencyInKHz">
+            <value>44.0999985</value>
+        </property>
+        <property name="channelCount">
+            <value>1</value>
+        </property>
+        <property name="length">
+            <value>0.42018140589569158</value>
+        </property>
+        <property name="lastModifiedDate">
+            <value>0</value>
+        </property>
+        <property name="audioFilePath">
+            <value>$(AUDIO_BIN_DIR)/footstep {affcde3f-f671-4d49-a98b-f5b58c12c46a}.wav</value>
+        </property>
+        <relationship name="container">
+            <destination>{7f6d8d2a-3718-4964-a4e9-b971dea67de2}</destination>
+        </relationship>
+    </object>
+</objects>

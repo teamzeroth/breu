@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.05.00">
+    <object class="AudioFile" id="{3b3397b0-119c-4d77-aa0e-798435e2e288}">
+        <property name="frequencyInKHz">
+            <value>44.0999985</value>
+        </property>
+        <property name="channelCount">
+            <value>2</value>
+        </property>
+        <property name="length">
+            <value>8</value>
+        </property>
+        <property name="lastModifiedDate">
+            <value>0</value>
+        </property>
+        <property name="audioFilePath">
+            <value>$(AUDIO_BIN_DIR)/Breu - 11hs ou 2hs {3b8fa677-729e-4f84-913c-a50c1c27f472}.wav</value>
+        </property>
+        <relationship name="container">
+            <destination>{7f6d8d2a-3718-4964-a4e9-b971dea67de2}</destination>
+        </relationship>
+    </object>
+</objects>

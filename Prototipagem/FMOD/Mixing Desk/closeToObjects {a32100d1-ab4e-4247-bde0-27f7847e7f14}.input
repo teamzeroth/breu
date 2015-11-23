@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.05.00">
+    <object class="MixerInput" id="{a32100d1-ab4e-4247-bde0-27f7847e7f14}">
+        <relationship name="effectChain">
+            <destination>{b2dc6c23-f6cd-4ecb-99b8-e0fc1627e144}</destination>
+        </relationship>
+        <relationship name="panner">
+            <destination>{eb417c60-a7d9-40c7-95f8-162e1fb47390}</destination>
+        </relationship>
+        <relationship name="output">
+            <destination>{3295c627-a4ef-4abe-b9ab-ed949a61da28}</destination>
+        </relationship>
+    </object>
+    <object class="MixerBusEffectChain" id="{b2dc6c23-f6cd-4ecb-99b8-e0fc1627e144}">
+        <relationship name="effects">
+            <destination>{6add8609-da64-42a3-9108-07ab7e7d8fb8}</destination>
+        </relationship>
+    </object>
+    <object class="MixerBusPanner" id="{eb417c60-a7d9-40c7-95f8-162e1fb47390}">
+        <property name="surroundStereoSeparation">
+            <value>180</value>
+        </property>
+        <property name="overridingOutputFormat">
+            <value>2</value>
+        </property>
+        <property name="outputFormatOverridden">
+            <value>true</value>
+        </property>
+    </object>
+    <object class="MixerBusFader" id="{6add8609-da64-42a3-9108-07ab7e7d8fb8}"/>
+</objects>
