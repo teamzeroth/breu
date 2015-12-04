@@ -37,9 +37,6 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
---- !u!127 &3
-LevelGameManager:
-  m_ObjectHideFlags: 0
 --- !u!157 &4
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -68,6 +65,7 @@ LightmapSettings:
     m_TextureCompression: 1
     m_FinalGather: 0
     m_FinalGatherRayCount: 1024
+    m_ReflectionCompression: 2
   m_LightmapSnapshot: {fileID: 0}
   m_RuntimeCPUUsage: 25
 --- !u!196 &5
@@ -372,7 +370,6 @@ GameObject:
   - 20: {fileID: 494567816}
   - 92: {fileID: 494567815}
   - 124: {fileID: 494567814}
-  - 81: {fileID: 494567813}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -380,13 +377,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &494567813
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 494567812}
-  m_Enabled: 1
 --- !u!124 &494567814
 Behaviour:
   m_ObjectHideFlags: 0
@@ -429,6 +419,7 @@ Camera:
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
+  m_TargetEye: 3
   m_HDR: 0
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
@@ -440,8 +431,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 494567812}
-  m_LocalRotation: {x: .359996587, y: .00113616185, z: -.000438302697, w: .932952881}
-  m_LocalPosition: {x: -0, y: 24.6000004, z: -17.2000008}
+  m_LocalRotation: {x: .372177988, y: 0, z: 0, w: .928161383}
+  m_LocalPosition: {x: 0, y: 11.46, z: -7.63999987}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1217805421}
@@ -886,6 +877,7 @@ GameObject:
   - 54: {fileID: 1217805417}
   - 114: {fileID: 1217805422}
   - 114: {fileID: 1217805423}
+  - 81: {fileID: 1217805424}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -984,7 +976,8 @@ MonoBehaviour:
   touchNormal: 200
   maxTouchForce: 2
   minMagnetudeSpin: .400000006
-  usingTouch: 1
+  usingTouch: 0
+  _feetAudio: {fileID: 1813294537}
 --- !u!114 &1217805423
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -997,6 +990,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pluginPaths: []
+--- !u!81 &1217805424
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1217805416}
+  m_Enabled: 1
 --- !u!1 &1256438625
 GameObject:
   m_ObjectHideFlags: 0
@@ -1374,7 +1374,7 @@ GameObject:
   - 4: {fileID: 1813294536}
   - 114: {fileID: 1813294537}
   m_Layer: 0
-  m_Name: Feets
+  m_Name: Feet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1387,7 +1387,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1813294535}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 16, y: -1.00399995, z: 24.2999992}
+  m_LocalPosition: {x: 0, y: -1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1217805421}
